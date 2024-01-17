@@ -19,7 +19,7 @@ return {
   DiagnosticWarn = "",
   Ellipsis = "…",
   FileNew = "",
-  FileModified = "",
+  FileModified = "󰹍",
   FileReadOnly = "",
   FoldClosed = "",
   FoldOpened = "",

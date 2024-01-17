@@ -377,7 +377,7 @@ end
 -- @usage local heirline_component = { provider = require("astronvim.utils.status").provider.file_modified() }
 -- @see astronvim.utils.status.utils.stylize
 function M.file_modified(opts)
-  opts = extend_tbl({ str = "", icon = { kind = "FileModified" }, show_empty = true }, opts)
+  opts = extend_tbl({ str = "", icon = { kind = "FileModified", color = "#f5071b" }, show_empty = true }, opts)
   return function(self)
     return status_utils.stylize(condition.file_modified((self or {}).bufnr) and opts.str or nil, opts)
   end
